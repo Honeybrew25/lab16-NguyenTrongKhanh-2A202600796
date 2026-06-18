@@ -1,0 +1,12 @@
+Host lab-bastion
+    HostName 34.239.240.102
+    User ubuntu
+    IdentityFile "D:/AI VinUni/Labs/lab16-NguyenTrongKhanh-2A202600796/terraform/lab-key"
+    StrictHostKeyChecking accept-new
+
+Host lab-cpu
+    HostName 10.0.10.196
+    User ec2-user
+    IdentityFile "D:/AI VinUni/Labs/lab16-NguyenTrongKhanh-2A202600796/terraform/lab-key"
+    ProxyJump lab-bastion
+    StrictHostKeyChecking accept-new
